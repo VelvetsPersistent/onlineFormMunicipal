@@ -1,0 +1,540 @@
+/* CSS for Admin */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+
+.btn {
+    
+    border: 1px solid #42b7f1;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+ 
+.btn-primary {
+    background: 1px #42b7f1;
+    border : 1px solid #42b7f1;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 80px;
+}
+
+.btn-primary:hover {
+    background-color: #0081c1;
+}
+
+.btn-secondary {
+    background: 1px #7bed9f;
+    padding: 4px;
+    color: #014f1a;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-secondary:hover {
+    background-color: #2ed573;
+}
+
+.btn-danger {
+    background: 1px #ff6b81;
+    padding: 1%;
+    color: rgb(134, 4, 4);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #ff4757;
+}
+
+.success {
+    color: green;
+    width: 80%;
+    margin: 0 auto;
+    /* padding: 1%; */
+    border: solid blue;
+    padding: 2px; 
+    border-radius: 15px;
+    text-align: center;
+}
+
+.error {
+    color: red;
+}
+
+/* CSS for login */
+.login{
+    width: 20%;
+    border: 4px solid #0d00ff;
+    border-radius: 10%;
+    margin: 10% auto;
+    padding: 2%;
+    color:#0d00ff;
+    
+}
+/* Css for logout */
+.btn1 {
+   
+    padding: 5px 5px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    background-color: #fbb3ae; /* Red color for logout button */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+    text-decoration: none; /* Remove default link underline */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+/* Hover effect for the logout button */
+.btn1:hover {
+    background-color: #d32f2f; /* Darker red color on hover */
+    color: #7bed9f;
+}
+
+/* Responsive styling for the logout button */
+@media screen and (max-width: 600px) {
+    .btn1 {
+        padding: 5px 5px; /* Decrease padding for smaller screens */
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+}
+
+
+
+
+/* Admin Css */
+/* CSS for Admin */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+.tbl-full {
+    width: 100%;
+}
+
+.tbl-30 {
+    width: 30%;
+}
+
+table tr th {
+    border-bottom: 1px solid #293af3;
+    padding: 1%;
+    text-align: left;
+}
+
+table tr td {
+    padding: 1%;
+}
+
+.btn {
+    
+    border: 1px solid #293af3;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+  /* .btn1{
+    
+    border: 2px solid #293af3;
+    padding: 2px;
+    font-size: 1rem;
+    border-radius: 50px;
+  } */
+
+.btn-primary {
+    background: 1px #293af3;
+    border : 1px solid #293af3;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 80px;
+}
+
+.btn-primary:hover {
+    background-color: #000fb8;
+}
+
+.btn-secondary {
+    background: 1px #7bed9f;
+    padding: 1%;
+    color: #014f1a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-secondary:hover {
+    background-color: #2ed573;
+}
+
+.btn-danger {
+    background: 1px #ff6b81;
+    padding: 1%;
+    color: rgb(134, 4, 4);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #ff4757;
+}
+
+/* .success {
+    color: green;
+} */
+
+.error {
+    color: red;
+}
+
+
+/* CSS for Menu */
+
+.menu {
+    border-bottom: 1px solid #14468c;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    display: inline;
+    padding: 1%;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #14468c;
+}
+
+.menu ul li a:hover {
+    color: #0056b3;
+}
+
+
+/* CSS for Main Content */
+
+.main-content {
+    background-color: #f1f2f6;
+    color : #293af3;
+    padding: 3% 0;
+}
+
+.col-4 {
+    width: 18%;
+    background-color: white;
+    
+    margin: 1%;
+    padding: 2%;
+    float: left;
+}
+
+
+/* CSS for Footer */
+
+.footer {
+    /* background-color: #293af3; */
+    background-color: #14468c;
+    color: white;
+}
+/* CSS for login */
+.login{
+    width: 20%;
+    border: 4px solid #14468c;
+    border-radius: 10%;
+    margin: 10% auto;
+    padding: 2%;
+    color:#14468c;
+    
+}
+
+/* For Response Table */
+.tbl-full {
+    width: 100%;
+    border-collapse: collapse;
+}
+.tbl-full th,
+.tbl-full td {
+    padding: 10px; /* Add padding to create space between content and cell border */
+    text-align: center; /* Center-align text */
+    border: 1px solid #ddd; /* Add border around cells */
+}
+.tbl-full th {
+    background-color: #d7ebff; /* Add background color for table header */
+}
+.tbl-full .block-separator {
+    border-bottom: 2px solid black; /* Add a bold line as block separator */
+}
+
+
+/* Update Response CSS */
+.form-container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 1%;
+    padding: 20px;
+    background-color: #f4faff;
+    border: 2px solid darkblue;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.form-section {
+    /* display: none; */
+    /* padding: 20px 0px 10px 170px; */
+    margin-bottom: 20px;
+}
+.form-section.active {
+    display: block;
+}
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 20px;
+    color: #555;
+}
+#label-2 {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    margin-right: 0px;
+    color: #555;
+}
+.details label {
+    display: inline-block;
+    width: 112px;
+    text-align: right;
+    margin-right: 20px;
+    color: #555;
+}
+.sources label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 20px;
+    color: #555;
+}
+#right-label {
+    display: inline-block;
+    width: 80px;
+    /* text-align: right; */
+    margin-right: 20px;
+    color: #555;
+}
+#amt-label {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    margin-right: 20px;
+    color: #555;
+}
+#bank-label {
+    display: inline-block;
+    width: 190px;
+    text-align: right;
+    margin-right: 20px;
+    color: #555;
+}
+#num-label {
+    display: inline-block;
+    width: 102px;
+    text-align: right;
+    margin-right: 20px;
+    color: #555;
+}
+#qty-label {
+    display: inline-block;
+    width: 190px;
+    text-align: right;
+    margin-right: 20px;
+    color: #555;
+}
+#work-label {
+    display: inline-block;
+    width: 230px;
+    text-align: right;
+    margin-right: 20px;
+    color: #555;
+}
+#cash-label {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    margin-right: 20px;
+    color: #555;
+}
+
+.form-content input {
+    width: 200px;
+    margin: 5px 0 0 0;
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+.form-content input[type="radio"] {
+    width: 40px;
+}
+.select-status {
+    width: 200px;
+    margin: 5px 0 0 0;
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+
+/* Profile image */
+.upload-container {
+    display: flex;
+    /* justify-content: space-between; 
+    align-items: flex-start;  */
+    justify-content: space-around;
+    margin: 10px 100px;
+}
+
+.upload,
+.upload-n1,
+.upload-n2 {
+    width: 140px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload img,
+.upload-n1 img,
+.upload-n2 img {
+    border-radius: 10%;
+    border: 8px solid #DCDCDC;
+    width: 125px;
+    height: 125px;
+}
+
+.rightRound,
+.rightRound-1,
+.rightRound-2 {
+    /* position: absolute; */
+    /* bottom: -50px; */
+    /* top: 64%; */
+    top: 64%;
+    /* right: 10px; */
+    background: #00B4FF;
+    width: 32px;
+    height: 32px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.rightRound .fa,
+.rightRound-1 .fa,
+.rightRound-2 .fa {
+    position: relative;
+    top: 8px;
+    color: white;
+}
+
+.upload input,
+.upload-n1 input,
+.upload-n2 input {
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+}
+
+.upload input::-webkit-file-upload-button,
+.upload input[type=submit],
+.upload-n1 input::-webkit-file-upload-button,
+.upload-n1 input[type=submit],
+.upload-n2 input::-webkit-file-upload-button,
+.upload-n2 input[type=submit] {
+    cursor: pointer;
+}
+/* 
+.info {
+    position: relative;
+    z-index: 1;
+    top: -130px; 
+} */
+
+
+/* Full Screen Image */
+/* Fullscreen Image Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the modal */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    margin: auto;
+    margin-top: 10%;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  /* Close button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  

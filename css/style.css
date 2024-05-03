@@ -1,0 +1,785 @@
+*{
+    padding: 0 0;
+    margin: 0 0;
+    box-sizing: border-box;
+    font-family: 'kalimati', sans-serif;
+
+
+}
+body {
+    font-family: 'kalimati', sans-serif;
+    background: #ffffff;
+    min-height: 200vh;
+}
+/* CSS for Header */
+header{
+    position: fixed;
+    /* top: 10%; */
+    /* right: 0; */
+    width: 100%;
+    /* display: flex; */
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    /* padding: 20px 0px; */
+    z-index: 100000;
+}
+
+.head-flex{
+    /* position: fixed; */
+    display: flex;
+    /* padding: 10px; */
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+}
+.logo {
+    width: 10%;
+    /* height: 60px; */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    /* left: 28%; */
+}
+.flag {
+    width: 7%;
+    /* width: 71px;
+    height: 60px; */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    /* left: 28%; */
+}
+
+.header-text {
+    margin: 45px; /* Remove default margin */
+    text-align: center; /* Center align text */
+    flex-grow: 1; /* Allow the text to grow and occupy available space */
+    font-size: 25px;
+}
+
+.text-center{
+    text-align: center; 
+   
+}
+
+header ul{
+    position: relative;
+    /* margin-top: 5%; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #14468c;
+}
+header ul li{
+    position: relative;
+    list-style-type: none;
+
+}
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+.emptyspace{
+    margin-bottom: 13.03%;
+    background-color: #007bff;
+}
+.container {
+    width: 80%;
+
+    margin: auto;
+}
+
+/* Form CSS */
+
+ .form-container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 1%;
+    padding: 20px;
+    background-color: rgb(183, 237, 255);
+    border: 2px solid darkblue;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    float: left;
+    width: 150px;
+    border-right: 2px solid darkblue;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar li {
+    margin-bottom: 10px;
+}
+.sidebar li a {
+    text-decoration: none;
+    color: black;
+}
+.sidebar li a.active {
+    font-weight: bold;
+}
+li a {
+    color: blue;
+    font-weight: bold; 
+    text-decoration: underline; 
+    text-decoration: underline; 
+}
+li a:hover {
+    text-decoration: underline;
+    color: #007bff;
+}
+.form-section {
+    display: none;
+    padding: 20px 0px 10px 170px;
+}
+
+.form-section.active {
+    display: block;
+}
+.home-button {
+    background-color: #fff;
+    border: 2px solid darkblue;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute; 
+    top: 112px; 
+}
+.Submit-button {
+    position: fixed; 
+    right: 50%; 
+    background-color: #fff;
+    border: 2px solid darkblue;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Adjust the size of the icon */
+.icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+
+
+
+
+
+
+/* CSS for Footer */
+hr {
+    border: 1px solid #ccc;
+    margin-top: 20px;
+  }
+  
+
+.container {
+    /* width: 80%;
+    margin: 0 auto; */
+    padding: 1%;
+  }
+
+.social ul {
+    list-style-type: none;
+  }
+  .social ul li {
+    display: inline;
+    padding-bottom: 1%;
+  }
+  .social-links{
+    text-align:center;
+  
+  }
+  .social-links .fa{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid #293af3;
+    border-radius: 100px;
+    margin: 20px 5px 0;
+    color: #293af3;
+    cursor: pointer;
+    transition: .5s;
+  }
+  .social-links .fa:hover{
+    background: #1c01b8;
+    color:white;
+    transform: translateY(-7px);
+  
+  }
+  
+  .social-links p{
+    font-size: 12px;
+    margin-top: 20px ;
+    font-style: italic;
+  }
+
+
+/* Image Slider */
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.slide {
+    position: relative; /* To position text relative to image */
+}
+
+.text {
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    /* width: 100%; */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in width calculation */
+    font-size: 40px; /* Adjust the font size as needed */
+    font-weight: bold;
+}
+
+/* Css for login and signin */
+/* CSS for Admin */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+
+.btn {
+    border: 1px solid #293af3;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+.btnl {
+    width: 60%;
+    border: 1px solid #293af3;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+.btns {
+    
+    border: 1px solid #293af3;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+ 
+.btn-primary {
+    background: 1px #293af3;
+    border : 1px solid #293af3;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 80px;
+}
+
+.btn-primary:hover {
+    background-color: #000fb8;
+}
+
+.btn-secondary {
+    background: 1px #7bed9f;
+    padding: 1%;
+    border-radius: 30px;
+    color: #014f1a;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+.small-text{
+    font-size: 14px;
+}
+
+.btn-secondary:hover {
+    background-color: #2ed573;
+}
+
+.btn-danger {
+    background: 1px #ff6b81;
+    padding: 1%;
+    color: rgb(134, 4, 4);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #ff4757;
+}
+
+.success {
+    color: green;
+    width: 80%;
+    margin: 0 auto;
+    /* padding: 1%; */
+    border: solid #293af3;
+    padding: 2px; 
+}
+
+.error {
+    color: red;
+}
+
+/* CSS for login */
+.login{
+    width: 25%;
+    border: 4px solid #293af3;
+    border-radius: 10%;
+    margin: 10% auto;
+    padding: 2%;
+    color:#293af3;
+    
+}
+/* Css for logout */
+.btn1 {
+   
+    padding: 5px 5px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    background-color: #f44336; /* Red color for logout button */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+    text-decoration: none; /* Remove default link underline */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+/* Hover effect for the logout button */
+.btn1:hover {
+    background-color: #d32f2f; /* Darker red color on hover */
+    color: #7bed9f;
+}
+
+/* Responsive styling for the logout button */
+@media screen and (max-width: 600px) {
+    .btn1 {
+        padding: 5px 5px; /* Decrease padding for smaller screens */
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+}
+
+/* css for dropdown */
+/* Dropdown button */
+.dropbtn {
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #4CAF50;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Position the dropdown content */
+  .dropdown-content {
+    right: 0;
+  }
+  
+  
+
+/* form css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* .container {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #333;
+}
+h3 {
+    margin-top: 0;
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+.form-section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 20px;
+    color: #555;
+}
+.radio-group label {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    margin-right: 0px;
+    color: #555;
+}
+.details label {
+    display: inline-block;
+    width: 112px;
+    text-align: right;
+    margin-right: 20px;
+    color: #555;
+}
+.sources label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 20px;
+    color: #555;
+}
+#amt-label {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    margin-right: 20px;
+    color: #555;
+}
+#bank-label {
+    display: inline-block;
+    width: 190px;
+    text-align: right;
+    margin-right: 20px;
+    color: #555;
+}
+#num-label {
+    display: inline-block;
+    width: 102px;
+    text-align: right;
+    margin-right: 20px;
+    color: #555;
+}
+#qty-label {
+    display: inline-block;
+    width: 190px;
+    text-align: right;
+    margin-right: 20px;
+    color: #555;
+}
+#work-label {
+    display: inline-block;
+    width: 230px;
+    text-align: right;
+    margin-right: 20px;
+    color: #555;
+}
+#cash-label {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    margin-right: 20px;
+    color: #555;
+}
+
+.form-content input {
+    width: 200px;
+    margin: 5px 0 0 0;
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+.form-content input[type="radio"]{
+    width: 20px;
+    /* margin: 5px 0 0 0;
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: right; */
+}
+
+.btn-submit-form {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    /* margin: 0 auto; */
+    margin-left: 20%;
+}
+
+.btn-submit-form:hover {
+    background-color: #0056b3;
+}
+.btn-save-form {
+    padding: 10px 20px;
+    background-color: #00fc7e;
+    color: #1a0101;
+    /* border: 1px black; */
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    /* margin: 0 auto; */
+    margin-left: 20%;
+}
+
+.btn-save-form:hover {
+    background-color: #009e0b;
+}
+
+
+/* Css for footer  */
+/* CSS for Footer */
+
+.footer {
+    /* background-color: #f17242; */
+    background-color: #14468c;
+    color: white;
+}
+/* CSS for login */
+.login{
+    width: 30%;
+    border: 4px solid #14468c;
+    border-radius: 10%;
+    margin: 10% auto;
+    padding: 2%;
+    color:#14468c;
+   
+    
+}
+
+
+/* User Profile */
+.uprofile {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+h2 {
+    color: #333;
+}
+
+.user-details {
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.label {
+    flex: 1;
+    text-align: left;
+    font-weight: bold;
+}
+
+.value {
+    flex: 1;
+    margin-right: 60px;
+    text-align: left;
+    font-weight : bold;
+    font-family: 'Lucida Sans';
+    color: #160285;
+}
+.value input{
+    size: 10px;
+}
+
+
+
+/* Profile image */
+
+.upload-container {
+    display: flex;
+    /* justify-content: space-between; 
+    align-items: flex-start;  */
+    justify-content: space-around;
+    margin: 10px 100px;
+}
+
+.upload,
+.upload-n1,
+.upload-n2 {
+    width: 140px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload img,
+.upload-n1 img,
+.upload-n2 img {
+    border-radius: 10%;
+    border: 8px solid #DCDCDC;
+    width: 125px;
+    height: 125px;
+}
+
+.rightRound,
+.rightRound-1,
+.rightRound-2 {
+    /* position: absolute; */
+    /* bottom: -50px; */
+    /* top: 64%; */
+    top: 64%;
+    /* right: 10px; */
+    background: #00B4FF;
+    width: 32px;
+    height: 32px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.rightRound .fa,
+.rightRound-1 .fa,
+.rightRound-2 .fa {
+    color: white;
+}
+
+.upload input,
+.upload-n1 input,
+.upload-n2 input {
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+}
+
+.upload input::-webkit-file-upload-button,
+.upload input[type=submit],
+.upload-n1 input::-webkit-file-upload-button,
+.upload-n1 input[type=submit],
+.upload-n2 input::-webkit-file-upload-button,
+.upload-n2 input[type=submit] {
+    cursor: pointer;
+}
+/* 
+.info {
+    position: relative;
+    z-index: 1;
+    top: -130px; 
+} */
+
+
+/* Full Screen Image */
+/* Fullscreen Image Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the modal */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    margin: auto;
+    margin-top: 10%;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  /* Close button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+
